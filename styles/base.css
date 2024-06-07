@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #001C30;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: lato, sans-serif
+}
+
+.h1-header {
+    background-color: #001C30;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    font-family: montserrat, sans-serif;
+}
+
+.h1-color {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+
+
+}
+
+main {
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #176B87;
+    justify-content: space-evenly;
+    font-family: Montserrat, sans-serif;
+    font-size: 25px;
+    padding: 1rem;
+
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+
+h2 {
+    color: white;
+    font-family: montserrat, sans-serif;
+}
+
+.grid {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 1fr;
+    gap: 1rem;
+}
+
+.active {
+    color: yellow;
+}
+
+.card-1 {
+    background-color: white;
+    border: solid 1px #64CCC5;
+    border-radius: 10px;
+    grid-column: 2/3;
+    box-shadow: 0 0 10px #9ecaed;
+    outline: none;
+
+}
+
+.card-1-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding: 25px;
+    gap: 1rem;
+    font-family: lato, sans-serif;
+}
+
+.card-1-title {
+    background-color: #176B87;
+    text-align: center;
+    font-family: montserrat, sans-serif;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.card-2 {
+    background-color: white;
+    border: solid 1px #64CCC5;
+    border-radius: 10px;
+    grid-column: 3/4;
+    box-shadow: 0 0 10px #9ecaed;
+    outline: none;
+
+
+}
+
+.card-2-title {
+    background-color: #176B87;
+    text-align: center;
+    font-family: montserrat, sans-serif;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+.card-2-grid {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: lato, sans-serif;
+    justify-content: center;
+    font-size: 25px;
+
+}
+
+.card-2-grid a {
+    text-decoration: none;
+    color: #000;
+}
+
+.card-2-grid a:visited {
+    color: #000;
+}
+
+.card-2-grid ul {
+    width: 100%;
+    padding: 0;
+    
+}
+
+.dev-list {
+    display: flex;
+    justify-content: center;
+    background-color: #64CCC5;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-2-grid ul li:hover {
+    background-color: #176B87;
+    cursor: pointer;
+    transition: .5s;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+
+.card-1-grid-2 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 25px;
+    gap: 1rem;
+    font-family: lato, sans-serif;
+}
+
+.card-1 img {
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.card-1 img:hover {
+    transform: rotate(5deg);
+    transition: .5s;
+}
+
+footer {
+    background-color: #176B87;
+    padding: 1rem;
+    border-top: solid 1px #052F5F;
+    position: relative;
+    text-align: center;
+    font-family: montserrat, sans-serif;
+    color: white;
+    font-weight: 600;
+
+
+}
+
+.icons {
+    width: 25px !important;
+    height: auto;
+    box-shadow: none !important;
+}
+
+.icons:hover {
+    transform: none !important;
+
+}
