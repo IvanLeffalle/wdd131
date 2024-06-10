@@ -5,6 +5,7 @@
 }
 
 body {
+    max-width: 100%;
     box-sizing: border-box;
     background-color: #001C30;
     min-height: 100vh;
