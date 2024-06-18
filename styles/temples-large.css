@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: montserrat, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1 {
+    font-size: 35px;
+}
+
+@media screen and (min-width: 500px) {
+
+
+    header {
+        background-color: #222831;
+        color: #EEEEEE;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navigation {
+        display: flex;
+
+    }
+
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+        color: #EEEEEE;
+
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        background-color: transparent;
+        position: absolute;
+        right: 0;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+        grid-gap: 25px;
+        place-items: center;
+        padding-bottom: 2rem;
+    }
+
+    .title {
+        grid-column: 3 / 4;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    figure {
+        text-align: center;
+    }
+
+    .figure-1 {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    .figure-2 {
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+
+    .figure-3 {
+        grid-row: 1/2;
+        grid-column: 4/5;
+    }
+
+    .figure-4 {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+    .figure-5 {
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+
+    .figure-6 {
+        grid-row: 2/3;
+        grid-column: 4/5;
+    }
+
+    .figure-7 {
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+
+    .figure-8 {
+        grid-row: 3/4;
+        grid-column: 3/4;
+    }
+
+    .figure-9 {
+        grid-row: 3/4;
+        grid-column: 4/5;
+    }
+
+
+
+
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: .5rem;
+    }
+
+    figcaption {
+        font-size: medium;
+    }
+
+    footer {
+        background-color: #222831;
+        padding: 1rem;
+        border-top: solid 1px #222831;
+        position: relative;
+        text-align: center;
+        font-family: montserrat, sans-serif;
+        color: white;
+        font-weight: 600;
+        margin-top: auto;
+
+    }
+}
