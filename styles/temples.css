@@ -11,7 +11,8 @@ figcaption {
 figure {
     text-align: center;
 }
-.title{
+
+.title {
     margin-top: 2rem;
 }
 
@@ -29,55 +30,74 @@ main {
 }
 
 #menu {
-	display: block;
-	font-size: 2rem;
-	font-weight:700;
-	text-decoration: none;
-	padding: .5rem .75rem;
-	background-color: #eee;
-	color: #000;
+    display: block;
+    position: absolute;
+    right: 0;
+    margin: 5px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    color: #000;
+    z-index: 9999;
+
 }
 
 #menu::before {
-	content: "≡";
+    content: "≡";
+
 }
 
 nav {
-	background-color: white;
+    display: flex;
+    background-color: white;
 }
+
 .navigation {
-	list-style: none;
-	margin: 0 auto;
-	max-width: 760px;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
 }
 
 .navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-	color: black;
-	font-weight: 700;
-	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
+    display: none;
 }
 
-.navigation a:hover, navigation a:active {
-	color: white;
-	background-color: black;
+.navigation a {
+    margin: 5px;
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover {
+    color: white;
+    background-color: black;
 }
 
 .show li {
-	display: block;
+    display: block;
 }
 
 #menu.show::before {
-	content: "X";
+    content: "X";
 }
 
+.navigation.show {
+    box-shadow: 0px 4px 8px 0px #cacaca;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+}
 
 
 footer {
@@ -107,4 +127,7 @@ img {
     width: 75%;
     height: auto;
     margin: .5rem;
+    box-shadow: 0px 4px 8px 0px #222831;
+    border-radius: 5px;
+
 }
