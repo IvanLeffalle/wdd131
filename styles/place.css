@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: montserrat, sans-serif;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+header {
+    background-color: #071952;
+    text-align: center;
+    padding: 3rem;
+    margin: 0;
+    font-size: 1rem;
+    color: #EBF4F6;
+    border-bottom: solid 10px #088395;
+
+}
+
+.hero img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-bottom: solid 5px #088395;
+}
+
+.data-card li,
+.weather li {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.data-card {
+    margin-top: 5px;
+    padding: 1rem;
+    font-size: 16px;
+    line-height: 1.6;
+    border-bottom: solid 1px #088395;
+
+}
+
+.data-content,
+.weather-content {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.labels li {
+    display: flex;
+    justify-content: end;
+}
+
+.values li {
+    display: flex;
+    justify-content: start;
+
+}
+
+ul.values {
+    padding-left: 10px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+
+.weather {
+    margin-top: 5px;
+    padding: 1rem;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.weather .icon {
+    width: 95px;
+    height: auto;
+    border-bottom: none !important;
+}
+
+footer {
+    background-color: #071952;
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+    font-family: montserrat, sans-serif;
+    color: #EBF4F6;
+    font-weight: 600;
+    margin-top: auto;
+    font-size: 12px;
+
+
+}
+
+
+@media screen and (min-width: 700px) {
+
+
+    header {
+        background-color: #071952;
+        text-align: center;
+        padding: 5rem;
+        margin: 0;
+        font-size: 2.5rem;
+        color: #EBF4F6;
+        border-bottom: solid 10px #088395;
+    }
+
+    .hero img {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .image-hero::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.55);
+    }
+
+
+    .hero {
+        position: relative;
+        margin: 0;
+    }
+
+    .data-card {
+        margin-top: 5px;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 550px;
+        padding: 1rem;
+        font-size: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        line-height: 1.6;
+
+    }
+
+    .data-content {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .labels li {
+        display: flex;
+        justify-content: end;
+    }
+
+    .values li {
+        display: flex;
+        justify-content: start;
+    }
+
+    .card-title {
+        display: flex;
+        margin-left: -40px;
+        background-color: #088395;
+        padding: 10px;
+        text-align: left;
+        align-items: center;
+        color: #EBF4F6;
+    }
+
+    .card-title .icon {
+        display: flex;
+        width: 40px;
+        height: auto;
+        justify-content: end;
+    }
+
+    .weather {
+        margin-top: 5px;
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 550px;
+        padding: 1rem;
+        font-size: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        line-height: 1.6;
+    }
+
+    .weather-content {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .data-card li,
+    .weather li {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        /* Remove default padding */
+        margin: 0;
+        /* Remove default margin */
+    }
+
+
+    footer {
+        background-color: #071952;
+        padding: 1rem;
+        position: relative;
+        text-align: center;
+        font-family: montserrat, sans-serif;
+        color: #EBF4F6;
+        font-weight: 600;
+        margin-top: auto;
+        font-size: 22px;
+        margin-top: -4px;
+
+    }
+
+    .weather .card-title h2::after {
+        content: '⛅';
+        margin-left: 400px;
+    }
+
+    ul.values {
+        padding-left: 10px;
+    }
+
+    .card-title .icon {
+        display: none;
+    }
+}

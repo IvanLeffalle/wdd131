@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="author" content="Ivan Leffalle">
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+
+<body>
+    <header>
+        <h1>Argentina</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="image-hero">
+                <div class="overlay"></div>
+                <picture>
+                    <source srcset="images/argentina-mobile.webp" media="(max-width: 550px)">
+                    <img src="images/argentina.jpg" alt="Argentina" width="400" height="200">
+                </picture>
+            </div>
+            <div class="data-card">
+                <div class="card-title">
+                    <h2>Data</h2>
+                </div>
+                <div class="data-content">
+                    <ul class="labels">
+                        <li>Area:</li>
+                        <li>Population:</li>
+                        <li>Capital:</li>
+                        <li>Languages:</li>
+                        <li>Currency:</li>
+                        <li>Time Zone:</li>
+                        <li>Calling Code:</li>
+                        <li>Internet TLD:</li>
+                    </ul>
+                    <ul class="values">
+                        <li>2,780,400 km²</li>
+                        <li>~45 million (2023)</li>
+                        <li>Buenos Aires</li>
+                        <li>Spanish (official)</li>
+                        <li>Argentine Peso (ARS)</li>
+                        <li>UTC−3 (ART)</li>
+                        <li>+54</li>
+                        <li>.ar</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="weather">
+                <div class="card-title">
+                    <h2>Weather</h2>
+                    <img class="icon" src="images/weather.svg" alt="">
+                </div>
+                <div id="weather-section">
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="year"></span> 🦷 Ivan Leffalle 🦷 Chaco, Argentina</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+</body>
+
+</html>
