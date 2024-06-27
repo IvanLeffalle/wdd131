@@ -70,6 +70,10 @@ ul.values {
     padding-left: 10px;
 }
 
+ul.labels {
+    padding-left: 0;
+}
+
 .card-title {
     text-align: center;
 }
