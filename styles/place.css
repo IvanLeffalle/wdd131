@@ -58,6 +58,7 @@ header {
 .labels li {
     display: flex;
     justify-content: end;
+    font-weight: 800;
 }
 
 .values li {
@@ -165,6 +166,7 @@ footer {
     .labels li {
         display: flex;
         justify-content: end;
+        font-weight: 800;
     }
 
     .values li {
