@@ -25,31 +25,20 @@ lastModified.innerHTML = formattedDate;
 
 //here
 
-// Function to calculate wind chill based on temperature and wind speed
-function calculateWindChill(temperature, windSpeed, unit) {
-    if (unit === 'C') {
-        // Celsius formula
-        return (temperature <= 10 && windSpeed > 4.8) ? (13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16)).toFixed(1) : "N/A";
-    } else if (unit === 'F') {
-        // Fahrenheit formula
-        return (temperature <= 50 && windSpeed > 3) ? (35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16)).toFixed(1) : "N/A";
-    } else {
-        return "N/A"; // Invalid unit
-    }
+function calculateWindChill(temperature, windSpeed,) {
+    return (temperature <= 10 && windSpeed > 4.8) ? (13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16)).toFixed(2) : "N/A";
+
 }
 
-// Static values for temperature and wind speed (replace with dynamic values later)
+
+// Static values for temperature and wind speed (I will replace them with dynamic values later)
 const temperatureCelsius = 5; // Example temperature in Celsius
 const windSpeedKmh = 10;      // Example wind speed in km/h
-
-// Calculate wind chill for Celsius
-const windChillCelsius = calculateWindChill(temperatureCelsius, windSpeedKmh, 'C');
-
+//define variable for wind chill
+const windChill = calculateWindChill(temperatureCelsius, windSpeedKmh,);
 // Display wind chill in the "Weather" section on page load
-window.onload = function () {
-    const weatherSection = document.getElementById('weather-section');
-    if (weatherSection) {
-        weatherSection.innerHTML = ` <div class="data-content">
+document.getElementById('weather-section').innerHTML =
+    ` <div class="data-content">
                 <ul class="labels">
                     <li>Temperature:</li>
                     <li>Conditions:</li>
@@ -60,9 +49,6 @@ window.onload = function () {
                     <li>${temperatureCelsius} °C</li>
                     <li>Sunny</li>
                     <li>${windSpeedKmh} km/h</li>
-                    <li>${windChillCelsius}</li>
+                    <li>${windChill}</li>
                 </ul>
             </div>`;
-    }
-};
-
