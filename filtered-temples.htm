@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Album: Temples | Ivan Leffalle</title>
+    <link rel="preload" href="styles/filtered-temples.css" as="style">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="this is a project for the course wdd131. We are learning about Javascript and mediaqueries">
+    <meta name="author" content="Ivan Leffalle">
+    <link rel="preload" as="image"
+        href="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg">
+
+</head>
+
+<body>
+    <header>
+        <h1>Picture Album</h1>
+        <button id="menu" aria-label="Open menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="title">
+            <h1>Temples</h1>
+            <h2>by Ivan Leffalle</h2>
+            <div class="element-with-line">
+            </div>
+            <div class="images"></div>
+
+    </main>
+    <footer>
+        <p>© <span id="year"></span> 🦷 Ivan Leffalle 🦷 Chaco, Argentina</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+    <script src="scripts/filtered-temples.js" defer></script>
+
+</body>
+
+</html>
