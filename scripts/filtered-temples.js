@@ -114,7 +114,6 @@ const temples = [
 		imageWidth: 400,
 		imageHeight: 250
 	},
-	// Add more temple objects here...
 ];
 
 function createTempleCard(filteredTemples) {
