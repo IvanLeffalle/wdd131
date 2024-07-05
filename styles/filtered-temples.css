@@ -110,7 +110,7 @@ footer {
 
 .images {
     display: grid;
-    padding: 1rem;
+    padding: 2%;
     grid-template-columns: 1fr;
     grid-gap: 25px;
     place-items: center;
