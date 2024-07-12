@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --primary-color: #BDE7BD;
+    --secondary-color: #BDD2E7;
+    --accent1-color: #E7BDE7;
+    --accent2-color: #E7D2BD;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Roboto Mono', monospace;
+
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 940px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+header {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    text-align: center;
+    border: solid 1px var(--accent1-color);
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+}
+
+.table-colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+.table-colors th {
+    background-color: #e4e4e4;
+}
+
+.table-colors td {
+    width: 25%;
+    height: 3em;
+}
+
+.example-paragraph {
+    background-color: var(--primary-color);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.example {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+img {
+    max-width: 940px;
+
+}
+
+.line {
+    width: 70%;
+    border: solid 1px var(--accent1-color);
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.wireframe {
+    box-shadow: 0px 4px 8px 0px var;
+}
+
+@media screen and (max-width: 700px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+}
