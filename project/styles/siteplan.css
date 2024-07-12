@@ -22,11 +22,11 @@ body {
 h1,
 h2,
 h3 {
-    font-family: var(--heading-font);
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {
-    font-family: var(--paragraph-font);
+    font-family: 'Roboto Mono', monospace;
 }
 
 header {
