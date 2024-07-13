@@ -32,7 +32,7 @@ header {
 
 .f1 select,
 .f1 label input[type="date"],
-.f1 label input[type="text"],
+.f1 input[type="text"],
 .f1 textarea {
     width: 100%;
     display: block;

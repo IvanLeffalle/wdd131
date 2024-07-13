@@ -23,36 +23,30 @@
             <select class="select" name="product" id="product" required>
                 <option value="" disabled>Select a product</option>
             </select>
-            <label>Overall Rating
-                <div class="star-rating">
-                    <input type="radio" name="star-a" id="star-a" value="1" required>
-                    <label for="star-a"></label>
-                    <input type="radio" name="star-b" id="star-b" value="1" required>
-                    <label for="star-b"></label>
-                    <input type="radio" name="star-c" id="star-c" value="1" required>
-                    <label for="star-c"></label>
-                    <input type="radio" name="star-d" id="star-d" value="1" required>
-                    <label for="star-d"></label>
-                    <input type="radio" name="star-e" id="star-e" value="1" required>
-                    <label for="star-e"></label>
-                </div>
+            <label for="rating">Overall Rating*</label>
+            <div class="star-rating">
+                <input type="radio" name="rating" id="star-a" value="1" required><label for="star-a"></label>
+                <input type="radio" name="rating" id="star-b" value="2" required><label for="star-b"></label>
+                <input type="radio" name="rating" id="star-c" value="3" required><label for="star-c"></label>
+                <input type="radio" name="rating" id="star-d" value="4" required><label for="star-d"></label>
+                <input type="radio" name="rating" id="star-e" value="5" required><label for="star-e"></label>
+            </div>
             </label>
             <label for="date">Date of Installation*
                 <input type="date" name="date" id="date" required>
             </label>
-            <div>Useful Features </div>
+            <div>Useful Features</div>
+            <label><input type="checkbox" name="features" id="Durability" value="Durability"> Durability</label>
+            <label><input type="checkbox" name="features" id="Ease" value="Ease"> Ease of Use</label>
+            <label><input type="checkbox" name="features" id="Performance" value="Performance"> Performance</label>
+            <label><input type="checkbox" name="features" id="Design" value="Design"> Design</label>
 
-            <label><input type="checkbox" name="features" id="Durability" value="features"> Durability</label>
-            <label><input type="checkbox" name="features" id="Ease" value="features"> Ease of Use</label>
-            <label><input type="checkbox" name="features" id="Performance" value="features"> Performance</label>
-            <label><input type="checkbox" name="features" id="Desing" value="features"> Desing</label>
+            <label for="textarea">Written Review</label>
+            <textarea name="review" id="textarea" cols="30" rows="10"></textarea>
+            </label>
+            <label for="uname">User Name</label>
+            <input type="text" name="uname" id="uname">
 
-            <label for="textarea">Written Review
-                <textarea name="textarea" id="textarea" cols="8" rows="4"></textarea>
-            </label>
-            <label for="uname">User Name
-                <input type="text" name="uname" id="uname">
-            </label>
             <input type="submit" value="Post Review">
         </form>
     </main>
