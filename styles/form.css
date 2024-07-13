@@ -102,7 +102,7 @@ textarea {
     content: '\2605';
 }
 
-.f1 label input[type="submit"] {
+.f1 input[type="submit"] {
     width: 96%;
     padding: .8rem;
     margin: 1rem 2% 2rem 2%;
@@ -229,7 +229,7 @@ footer {
         content: '\2605';
     }
 
-    .f1 label input[type="submit"] {
+    .f1 input[type="submit"] {
         width: 96%;
         padding: .8rem;
         margin: 1rem 2% 2rem 2%;
@@ -248,7 +248,4 @@ footer {
         font-weight: 600;
         margin-top: 20px;
     }
-
-    ;
-
 }

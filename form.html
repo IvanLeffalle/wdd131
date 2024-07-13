@@ -19,12 +19,11 @@
     </header>
     <main>
         <form action="review.html" method="get" class="f1">
-            <label for="prduct">Product Name* </label>
-
-            <select class="select" name="product" id="product" value="product" required>
-                <option value="">Select a product</option>
+            <label>Product Name* </label>
+            <select class="select" name="product" id="product" required>
+                <option value="" disabled>Select a product</option>
             </select>
-            <label for="rating">Overall Rating
+            <label>Overall Rating
                 <div class="star-rating">
                     <input type="radio" name="star-a" id="star-a" value="1" required>
                     <label for="star-a"></label>
@@ -43,22 +42,19 @@
             </label>
             <div>Useful Features </div>
 
-            <label><input type="checkbox" name="features" id="features" value="features"> Durability</label>
-            <label><input type="checkbox" name="features" id="features" value="features"> Ease of Use</label>
-            <label><input type="checkbox" name="features" id="features" value="features"> Performance</label>
-            <label><input type="checkbox" name="features" id="features" value="features"> Desing</label>
+            <label><input type="checkbox" name="features" id="Durability" value="features"> Durability</label>
+            <label><input type="checkbox" name="features" id="Ease" value="features"> Ease of Use</label>
+            <label><input type="checkbox" name="features" id="Performance" value="features"> Performance</label>
+            <label><input type="checkbox" name="features" id="Desing" value="features"> Desing</label>
 
             <label for="textarea">Written Review
-                <textarea name="textarea" id="textarea" cols="" rows="4"></textarea>
+                <textarea name="textarea" id="textarea" cols="8" rows="4"></textarea>
             </label>
             <label for="uname">User Name
                 <input type="text" name="uname" id="uname">
             </label>
-            <label for="submit">
-                <input type="submit" value="Post Review">
-            </label>
+            <input type="submit" value="Post Review">
         </form>
-
     </main>
     <footer>
         <p>© <span id="year"></span> 🦷 Ivan Leffalle 🦷 Chaco, Argentina</p>
