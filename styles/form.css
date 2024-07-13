@@ -49,7 +49,7 @@ header {
 
 .f1 select,
 .f1 label input:required {
-    border-bottom: solid 5px #ff69b4;
+    border-bottom: solid 5px red;
 
 }
 
@@ -76,11 +76,11 @@ textarea {
     font-family: Arial;
     font-size: 30px;
     transition: 0.2s ease;
-    color: orange;
+    color: red;
 }
 
 .star-rating label:hover {
-    color: #ff69b4;
+    color: green;
     transition: 0.2s ease;
 }
 
