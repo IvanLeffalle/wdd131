@@ -322,7 +322,7 @@ header {
 
 /*contact page CSS*/
 .hero-about {
-    background-color: var(--secondary-color);
+    background-color: transparent;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -390,6 +390,10 @@ header {
 .f1 label input:required:valid {
     border-bottom: solid 5px rgb(83, 182, 83);
 
+}
+
+.hero-about {
+    background-color: none;
 }
 
 @media screen and (min-width: 992px) {
@@ -503,14 +507,14 @@ header {
     }
 
     .content-section-1 {
-        display: flex; 
+        display: flex;
         flex-direction: column;
-        justify-content: center; 
-        align-items: center; 
+        justify-content: center;
+        align-items: center;
         text-align: center;
         grid-column: 7 / -1;
         margin: 0;
-        padding: 0 10rem; 
+        padding: 0 10rem;
     }
 
     .section-2 {
@@ -522,6 +526,8 @@ header {
         padding: 10rem;
         flex-direction: unset;
     }
+
+
 
     footer {}
 
@@ -682,7 +688,7 @@ header {
 
     /*contact page*/
     .hero-about {
-        background-color: var(--secondary-color);
+        background-color: transparent;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -691,7 +697,7 @@ header {
         width: 100%;
         grid-column: 1 / -1;
         flex-direction: column;
-        padding-bottom: 5rem;
+        padding-bottom: 3rem;
 
     }
 
