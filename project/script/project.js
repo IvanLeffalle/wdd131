@@ -11,6 +11,7 @@ const year = document.querySelector("#year");
 
 
 // use the date object
+
 const currentYear = new Date().getFullYear();
 
 year.innerHTML = currentYear;
